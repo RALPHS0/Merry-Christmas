@@ -1,0 +1,441 @@
+body{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background-color: skyblue;
+ overflow:hidden;
+ font-family: sans-serif;
+}
+
+.giftcontainer{
+ position: absolute;
+ top:80%;
+}
+
+.giftcontainer::before{
+  content: "";
+ position:absolute;
+ width:170px;
+ height:20px;
+ background-color: rgba(0,0,0,0.4);
+ left:-70px;
+ top:90px;
+ border-radius:50%;
+}
+ 
+.gift{
+  position:absolute;
+  width:150px;
+  height:100px;
+  background-color:#e9c46a;
+  left:-60px;
+ }
+ 
+.gift::before{
+ content:"";
+ position:absolute;
+ width:25px;
+ height:100px;
+ background-color: #e76f51;
+ left:62px;
+}
+ 
+.gift::after{
+ content:'';
+ position: absolute;
+ box-shadow:inset 0 10px rgba(0,0,0,0.3);
+ width:150px;
+ height: 100px;
+}
+
+#click{
+ display:none;
+}
+
+.click{
+ position: absolute ;
+ background-color: #e9c46a;
+ width:170px;
+ height:40px;
+ top:-40px;
+ left:-10px;
+ transform-origin: bottom left;
+ transition: 0.3s;
+ cursor:pointer;
+}
+
+.click::before{
+ position: absolute;
+ content:'';
+ width:25px;
+ height:40px;
+ background-color: #e76f51;
+ left:72px;
+}
+
+.click::after{
+ content: '';
+ position: absolute;
+ width:5px;
+ height:0px;
+ border-bottom:30px solid #e76f51;
+ border-top:30px solid #e76f51;
+ border-left: 0px solid transparent;
+ border-right: 30px solid transparent;
+ transform: rotate(-90deg);
+ left:65px;
+ top:-47px;
+}
+
+#click:checked+.click{
+ transform: rotate(-110deg) scale(0.85);
+}
+
+#click:checked~.Wishes{
+ transform: translateY(-150px);
+ z-index:2;
+ overflow:none;
+}
+
+.Wishes{
+ position: absolute;
+ transition: .5s;
+ color:#fff;
+ font-size:10px;
+ text-transform: uppercase;
+ text-align: center;
+ z-index:-1;
+ left:60px;
+ color:#fff;
+ 
+}
+
+
+
+
+
+
+.giftcontainer1{
+ position: relative;
+}
+
+.giftcontainer1::before{
+  content: "";
+ position:absolute;
+ width:170px;
+ height:20px;
+ background-color: rgba(0,0,0,0.4);
+ left:-70px;
+ top:90px;
+ border-radius:50%;
+ z-index:-1;
+}
+ 
+.gift1{
+  position:absolute;
+  width:150px;
+  height:100px;
+  background-color:#e9c46a;
+  left:-60px;
+  z-index:-1;
+ }
+ 
+.gift1::before{
+ content:"";
+ position:absolute;
+ width:25px;
+ height:100px;
+ background-color: #e76f51;
+ left:62px;
+ z-index:-1;
+}
+ 
+.gift1::after{
+ content:'';
+ position: absolute;
+ width:150px;
+ height: 100px;
+ z-index:-1;
+}
+
+#click1{
+ display:none;
+}
+
+.click1{
+ position: absolute ;
+ background-color: #e9c46a;
+ width:170px;
+ height:40px;
+ top:-40px;
+ left:-10px;
+ transform-origin: bottom left;
+ transition: 0.3s;
+ cursor:pointer;
+ z-index:-1; 
+}
+
+.click1::before{
+ position: absolute;
+ content:'';
+ width:25px;
+ height:40px;
+ background-color: #e76f51;
+ left:72px;
+ z-index:-1;
+}
+
+.click1::after{
+ content: '';
+ position: absolute;
+ width:5px;
+ height:0px;
+ border-bottom:30px solid #e76f51;
+ border-top:30px solid #e76f51;
+ border-left: 0px solid transparent;
+ border-right: 30px solid transparent;
+ transform: rotate(-90deg);
+ left:65px;
+ top:-47px;
+ z-index:-1;
+}
+
+#click1:checked+.click1{
+ transform: rotate(-110deg) scale(0.85);
+z-index:-1; 
+}
+
+#click1:checked~.Wishes1{
+ transform: translateY(-150px);
+ z-index:-2;
+}
+
+.Wishes1{
+ position: absolute;
+ transition: .5s;
+ color: #e9c46a;
+ font-size:10px;
+ text-transform: uppercase;
+ text-align: center;
+ z-index:-20;
+ left:60px;
+}
+
+
+
+
+
+
+.giftcontainer2{
+ position: relative;
+}
+
+.giftcontainer2::before{
+  content: "";
+ position:absolute;
+ width:170px;
+ height:20px;
+ background-color: rgba(0,0,0,0.4);
+ left:-70px;
+ top:90px;
+ border-radius:50%;
+ z-index:-1;
+}
+ 
+.gift2{
+  position:absolute;
+  width:150px;
+  height:100px;
+  background-color:#e9c46a;
+  left:-60px;
+  z-index:-1;
+ }
+ 
+.gift2::before{
+ content:"";
+ position:absolute;
+ width:25px;
+ height:100px;
+ background-color: #e76f51;
+ left:62px;
+ z-index:-1;
+}
+ 
+.gift2::after{
+ content:'';
+ position: absolute;
+ width:150px;
+ height: 100px;
+ z-index:-1;
+}
+
+#click2{
+ display:none;
+}
+
+.click2{
+ position: absolute ;
+ background-color: #e9c46a;
+ width:170px;
+ height:40px;
+ top:-40px;
+ left:-10px;
+ transform-origin: bottom left;
+ transition: 0.3s;
+ cursor:pointer;
+ z-index:-1; 
+}
+
+.click2::before{
+ position: absolute;
+ content:'';
+ width:25px;
+ height:40px;
+ background-color: #e76f51;
+ left:72px;
+ z-index:-1;
+}
+
+.click2::after{
+ content: '';
+ position: absolute;
+ width:5px;
+ height:0px;
+ border-bottom:30px solid #e76f51;
+ border-top:30px solid #e76f51;
+ border-left: 0px solid transparent;
+ border-right: 30px solid transparent;
+ transform: rotate(-90deg);
+ left:65px;
+ top:-47px;
+ z-index:-1;
+}
+
+#click2:checked+.click2{
+ transform: rotate(-110deg) scale(0.85);
+z-index:-1; 
+}
+
+#click2:checked~.Wishes2{
+ transform: translateY(-120px);
+ z-index:-1;
+}
+
+.Wishes2{
+ position: absolute;
+ left:60px;
+ z-index:-9;
+}
+
+
+
+
+.giftcontainer3{
+ position: relative;
+}
+
+.giftcontainer3::before{
+  content: "";
+ position:absolute;
+ width:170px;
+ height:20px;
+ background-color: rgba(0,0,0,0.4);
+ left:-70px;
+ top:90px;
+ border-radius:50%;
+ z-index:-3;
+}
+ 
+.gift3{
+  position:absolute;
+  width:150px;
+  height:100px;
+  background-color:#e9c46a;
+  left:-60px;
+  z-index:-3;
+ }
+ 
+.gift3::before{
+ content:"";
+ position:absolute;
+ width:25px;
+ height:100px;
+ background-color: #e76f51;
+ left:62px;
+ z-index:-3;
+}
+ 
+.gift3::after{
+ content:'';
+ position: absolute;
+ width:150px;
+ height: 100px;
+ z-index:-3;
+}
+
+#click3{
+ display:none;
+}
+
+.click3{
+ position: absolute ;
+ background-color: #e9c46a;
+ width:170px;
+ height:40px;
+ top:-40px;
+ left:-10px;
+ transform-origin: bottom left;
+ transition: 0.3s;
+ cursor:pointer;
+ z-index:-3; 
+}
+
+.click3::before{
+ position: absolute;
+ content:'';
+ width:25px;
+ height:40px;
+ background-color: #e76f51;
+ left:72px;
+ z-index:-3;
+}
+
+.click3::after{
+ content: '';
+ position: absolute;
+ width:5px;
+ height:0px;
+ border-bottom:30px solid #e76f51;
+ border-top:30px solid #e76f51;
+ border-left: 0px solid transparent;
+ border-right: 30px solid transparent;
+ transform: rotate(-90deg);
+ left:65px;
+ top:-47px;
+ z-index:-3;
+}
+
+#click3:checked+.click3{
+ transform: rotate(-110deg) scale(0.85);
+z-index:-10; 
+}
+
+#click3:checked~.Wishes3{
+ transform: translateY(-120px);
+ position: absolute;
+ transition: .5s;
+ color: white;
+ font-size:10px;
+ text-transform: uppercase;
+ text-align: center;
+ z-index:1;
+ text-shadow: 0 0 10px #020202;
+}
+
+.Wishes3{
+ position: absolute;
+ z-index:-11;
+ font-size: 15px;
+ color:transparent;
+}
